@@ -33,7 +33,7 @@ const Details = () => {
         ) : (
           <>
             <Space size={6} style={{marginBottom: 20}}>
-              <Button onClick={() => navigate("/")}>Back</Button>
+              <Button onClick={() => navigate("/home")}>Back</Button>
             </Space>
             <Row>
               <Col span={12}>
@@ -93,7 +93,7 @@ const Details = () => {
                       </Title>
                       <div className="buttons">
                         {cardDetail.borders?.map((item, index) => (
-                          <Button key={index} onClick={() => navigate(`/${item}`)}>{item}</Button>
+                          <Button key={index} onClick={() => navigate(`/detail/${item}`)}>{item}</Button>
                         ))}
                       </div>
                     </div>

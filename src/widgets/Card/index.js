@@ -6,7 +6,7 @@ const CardWidget = ({ card }) => {
   const navigate = useNavigate();
   return (
     <CardStyled>
-      <Card className="card" onClick={() => navigate(card.alpha2Code)}>
+      <Card className="card" onClick={() => navigate(`/detail/${card.alpha2Code}`)}>
         <div className="image">
           <img src={card.flag} alt="" />
         </div>

@@ -20,8 +20,8 @@ function App() {
       <GlobalStyles/>
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<Layout children={<Main />} toggleTheme={toggleTheme} />} />
-          <Route path="/:name" element={<Layout children={<Details />} toggleTheme={toggleTheme}/>} />
+          <Route path="/home" element={<Layout children={<Main />} toggleTheme={toggleTheme} />} />
+          <Route path="/detail/:name" element={<Layout children={<Details />} toggleTheme={toggleTheme}/>} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
