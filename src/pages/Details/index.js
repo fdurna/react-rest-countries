@@ -33,7 +33,7 @@ const Details = () => {
         ) : (
           <>
             <Space size={6} style={{marginBottom: 20}}>
-              <Button onClick={() => navigate("/home")}>Back</Button>
+              <Button onClick={() => navigate("/")}>Back</Button>
             </Space>
             <Row>
               <Col span={12}>
