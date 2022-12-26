@@ -1,6 +1,6 @@
 import "./App.css";
 import {ThemeProvider} from "styled-components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 // utils
 import { lightTheme, darkTheme } from "./utils/themes"
 import { GlobalStyles } from "./utils/globalStyles";
@@ -18,12 +18,12 @@ function App() {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles/>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout children={<Main />} toggleTheme={toggleTheme} />} />
           <Route path="detail/:name" element={<Layout children={<Details />} toggleTheme={toggleTheme}/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
